@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:login_register/login_page.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -81,6 +82,11 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                             onPressed: () {
                               print('Login Tapped');
+                              Navigator.push(
+                                  context,  
+                                  MaterialPageRoute(
+                                    builder: (context) => LoginPage(),
+                                  ));
                             },
                           ),
                         ),
